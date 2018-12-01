@@ -109,7 +109,11 @@ var iSides = function() {
       // Aleast two sides have to be similar for it to be an Isosceles triangle
       //alert("Isosceles triangle");
       if (num0 + num1 <= num2 || num0 + num2 <= num1 || num1 + num2 <= num0) {
-        alert("Triangle cannot be formed using those values");
+        //After submitting my values, the application should tell me what
+        //type of triangle my values will produce, whether an isosceles, equilateral
+        //, scalene or NO triangle at all
+        //alert("Triangle cannot be formed using those values");
+        alert("NO triangle at all");
       } else {
         alert("Isosceles Triangle");
       }
@@ -122,7 +126,7 @@ var iSides = function() {
       if (num0 + num1 > num2 || num0 + num2 > num1 || num1 + num2 > num0) {
         alert("Scalene Triangle");
       } else {
-        alert("Not a triangle");
+        alert("NO triangle at all");
       }
     }
   } else {
