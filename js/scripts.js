@@ -11,7 +11,6 @@ var sides = function() {
     info[x] = parseFloat(prompt("Enter the length of a triangle: ", "0"), 10);
   }
 
-
   if (info[0] / 1 !== info[0]) {
     alert("You have entered a value that is not numeric. On your first entry");
   } else
@@ -23,21 +22,18 @@ var sides = function() {
       if (info[2] / 1 !== info[2]) {
         alert("You have entered a value that is not numeric. On your third entry");
       }
-
       else
       {
         if (info[0] === info[1] && info[0] === info[2] && info[1] === info[2]) {
-          alert("Equilateral Triangle");
-
+          equChecker(info[0], info[1], info[2]);
         } else if (info[0] === info[1] || info[0] === info[2] || info[1] === info[2]) {
-          alert("Isosceles triangle");
-
+          isosChecker(info[0], info[1], info[2]);
         } else if (info[0] !== info[1] && info[0] !== info[2] && info[1] !== info[2]) {
-          alert("Scalene triangle");
-
+          scalChecker(info[0], info[1], info[2]);
         }
       }
-          }
+
+    }
   }
 };
 // --------------End of the main function------------------------------------
