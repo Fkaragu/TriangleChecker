@@ -1,5 +1,22 @@
+//--------Accepting user input via prompts-----------------------------------//
+//-------Original Content -----------------------------------------------------
+//-------Start of Isosceles function -------------------------------------------
+var isosChecker = function(num0, num1, num2) {
+  //condition to check if 2 entries are matching to be on the main function
+  if (num0 > 0 && num1 > 0 && num2 > 0) {
+    if (num0 + num1 <= num2 || num0 + num2 <= num1 || num1 + num2 <= num0) {
+      alert("Triangle cannot be formed using those values");
+    } else {
+      alert("Isosceles triangle");
+    }
+  } else {
+    alert("The values of a triangle have to be greater than 0");
+  }
+};
+// --------------End of the isosChecker function---------------------------
 //------------------------------------------------------------------------------
-//iSides is the main function for user input from UI directly.
+//-----Content changed on 30/11/12 ---------------------------------------------
+//iSide is the main function for user input from UI directly.
 var iSides = function() {
 
   var num0 = document.getElementById('a').value;
@@ -27,7 +44,7 @@ var iSides = function() {
       //1. none of the sides is equal.
       //2. The sum of any two sides of the triangle must be greater than the third side.
       //alert("Scalene triangle");
-      if (num0 + num1 < num2 || num0 + num2 < num1 || num1 + num2 < num0) {
+      if (num0 + num1 > num2 || num0 + num2 > num1 || num1 + num2 > num0) {
         alert("Scalene Triangle");
       } else {
         alert("Not a triangle");
@@ -37,4 +54,4 @@ var iSides = function() {
     alert("The values of a triangle have to be greater than 0");
   }
 };
-//-----------------------End of iSides main function-------------------------
+//-----------------------End of iSide main function-------------------------
