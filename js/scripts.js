@@ -24,7 +24,21 @@ var isosChecker = function(num0, num1, num2) {
   }
 };
 // --------------End of the isosChecker function--------------------------------
+// --------------Start of Scalene function ------------------------------------
+var scalChecker = function(num0, num1, num2) {
+  //condition to check if all entries are not matching to be on the main function
+  if (num0 > 0 && num1 > 0 && num2 > 0) {
+    if (num0 + num1 > num2 || num0 + num2 > num1 || num1 + num2 > num0) {
+      alert("Scalene Triangle");
+    } else {
+      alert("Not a triangle");
+    }
 
+  } else {
+    alert("The value of a triangle can only be greater than 0");
+  }
+};
+// --------------End of the Scalene function------------------------------------
 //------------------------------------------------------------------------------
 //-----Content changed on 30/11/12 ---------------------------------------------
 //iSide is the main function for user input from UI directly.
