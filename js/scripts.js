@@ -1,7 +1,6 @@
 //--------Accepting user input via prompts-----------------------------------//
 //-------Original Content -----------------------------------------------------
 //------------------------------------------------------------------------------
-//------------------------------------------------------------------------------
 //sides is the main function for user input from UI prompts...................
 
 var sides = function() {
@@ -12,7 +11,8 @@ var sides = function() {
     info[x] = parseFloat(prompt("Enter the length of a triangle: ", "0"), 10);
   }
 
-    if (info[0] / 1 !== info[0]) {
+
+  if (info[0] / 1 !== info[0]) {
     alert("You have entered a value that is not numeric. On your first entry");
   } else
   {
@@ -23,12 +23,24 @@ var sides = function() {
       if (info[2] / 1 !== info[2]) {
         alert("You have entered a value that is not numeric. On your third entry");
       }
-      else {
-        alert("You have entered numeric");
+
+      else
+      {
+        if (info[0] === info[1] && info[0] === info[2] && info[1] === info[2]) {
+          alert("Equilateral Triangle");
+
+        } else if (info[0] === info[1] || info[0] === info[2] || info[1] === info[2]) {
+          alert("Isosceles triangle");
+
+        } else if (info[0] !== info[1] && info[0] !== info[2] && info[1] !== info[2]) {
+          alert("Scalene triangle");
+
+        }
       }
-    }
+          }
   }
 };
+// --------------End of the main function------------------------------------
 // ----Start of Equilateral function -------------------------------------------
 var equChecker = function(num0, num1, num2) {
   //condition to check if 3 entries are matching to be on the main function
