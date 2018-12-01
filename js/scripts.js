@@ -1,5 +1,15 @@
 //--------Accepting user input via prompts-----------------------------------//
 //-------Original Content -----------------------------------------------------
+// ----Start of Equilateral function -------------------------------------------
+var equChecker = function(num0, num1, num2) {
+  //condition to check if 3 entries are matching to be on the main function
+  if (num0 > 0 && num1 > 0 && num2 > 0) {
+    alert("Equilateral Triangle");
+  } else {
+    alert("The values of a triangle have to be greater than 0");
+  }
+};
+// --------------End of the Equilateral function--------------------------------
 //-------Start of Isosceles function -------------------------------------------
 var isosChecker = function(num0, num1, num2) {
   //condition to check if 2 entries are matching to be on the main function
@@ -13,7 +23,8 @@ var isosChecker = function(num0, num1, num2) {
     alert("The values of a triangle have to be greater than 0");
   }
 };
-// --------------End of the isosChecker function---------------------------
+// --------------End of the isosChecker function--------------------------------
+
 //------------------------------------------------------------------------------
 //-----Content changed on 30/11/12 ---------------------------------------------
 //iSide is the main function for user input from UI directly.
