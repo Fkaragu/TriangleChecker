@@ -1,5 +1,18 @@
 //--------Accepting user input via prompts-----------------------------------//
 //-------Original Content -----------------------------------------------------
+//------------------------------------------------------------------------------
+//sides is the main function for user input from UI prompts...................
+
+var sides = function() {
+
+  var info = Array();
+
+  for (x = 0; x < 3; x++) {
+    info[x] = parseFloat(prompt("Enter the length of a triangle: ", "0"), 10);
+  }
+};
+
+// --------------End of the main function------------------------------------
 // ----Start of Equilateral function -------------------------------------------
 var equChecker = function(num0, num1, num2) {
   //condition to check if 3 entries are matching to be on the main function
