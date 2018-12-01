@@ -11,28 +11,41 @@ var sides = function() {
     info[x] = parseFloat(prompt("Enter the length of a triangle: ", "0"), 10);
   }
 
+  // checking if the values entered are numeric============================
   if (info[0] / 1 !== info[0]) {
     alert("You have entered a value that is not numeric. On your first entry");
-  } else
+  } else //(info[0]/1 == info[0])
   {
     if (info[1] / 1 !== info[1]) {
       alert("You have entered a value that is not numeric. On your second entry");
-    } else
+    } else //(info[1]/1 == info[1])
     {
       if (info[2] / 1 !== info[2]) {
         alert("You have entered a value that is not numeric. On your third entry");
       }
-      else
+      // End of checking if the values entered are numeric=====================
+      // Lets check the data captured now
+      else //(info[2]/1 == info[2])
       {
         if (info[0] === info[1] && info[0] === info[2] && info[1] === info[2]) {
+          // All sides have to be similar for it to be an equilateral triangle
+          // Something to  factor in, the user can not enter 0,0,0 or negative values values have to be greater than 0
+          //alert("Equilateral Triangle");
           equChecker(info[0], info[1], info[2]);
         } else if (info[0] === info[1] || info[0] === info[2] || info[1] === info[2]) {
+          // Aleast two sides have to be similar for it to be an Isosceles triangle
+          // Something to factor in, the user can not enter 0,0 or -ve values values have to be greater than 0
+          //alert("Isosceles triangle");
           isosChecker(info[0], info[1], info[2]);
         } else if (info[0] !== info[1] && info[0] !== info[2] && info[1] !== info[2]) {
+          //For a triangle to be scalene triangle it has to meet the below
+          //1. none of the sides is equal.
+          //2. The sum of any two sides of the triangle must be greater than the third side.
+          //alert("Scalene triangle");  above conditions have to be checked.
           scalChecker(info[0], info[1], info[2]);
         }
       }
-
+      // End of checking the data captured now
     }
   }
 };
