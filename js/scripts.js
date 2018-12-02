@@ -113,7 +113,7 @@ var iSides = function() {
         //type of triangle my values will produce, whether an isosceles, equilateral
         //, scalene or NO triangle at all
         //alert("Triangle cannot be formed using those values");
-        alert("NO triangle at all");
+        alert("Triangle cannot be formed using those values so, No triangle at all");
       } else {
         alert("Isosceles Triangle");
       }
