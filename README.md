@@ -3,7 +3,7 @@
 #### By **{Francis T Karagu}**
 
 ## Description
-The triangle checker program that is designed to meet the objectives of the user as well as monitor or evaluate my understanding of my second week of training. As for the user objectives they are:
+The triangle checker program is designed to meet the objectives of the user as well as monitor / evaluate my understanding of my second week of training. As for the user objectives they are:
 
 * For an equilateral triangle, all sides must be equal.
 * For an isosceles triangle, two sides are exactly equal.
