@@ -123,10 +123,11 @@ var iSides = function() {
       //1. none of the sides is equal.
       //2. The sum of any two sides of the triangle must be greater than the third side.
       //alert("Scalene triangle");
-      if (num0 + num1 > num2 || num0 + num2 > num1 || num1 + num2 > num0) {
-        alert("NO triangle at all");
-      } else {
+      if (num0 + num1 > num2 && num0 + num2 > num1 && num1 + num2 > num0) {
         alert("Scalene Triangle");
+
+      } else {
+        alert("NO triangle at all"); 
 
       }
     }
